@@ -68,6 +68,27 @@ var channelObjects = [
   }
 ];
 
+
+
+var elChannelTemplate = $_(`.channel-template`).content;
+var elChannelTemplateFragment = document.createDocumentFragment();
+
+channelObjects.forEach (function(channelObject){
+  var elChannelItem = elChannelTemplate.cloneNode(true);
+
+  $_(`.channel__item-img`, elChannelItem).src = channelObject.channelItemImg;
+  $_(`.channel__item-heading`, elChannelItem).textContent = channelObject.channelItemHeading;
+  $_(`.channel__item-info`, elChannelItem).textContent = channelObject.channelItemInfo;
+  $_(`.channel__item-name`, elChannelItem).textContent = channelObject.channelItemName;
+  $_(`.video-duration`, elChannelItem).textContent = channelObject.videoDuration;
+
+  elChannelTemplateFragment.appendChild(elChannelItem);
+
+});
+
+$_(`.channel__list`).appendChild(elChannelTemplateFragment);
+
+
 var recommendedObjects = [
   {
     recommendedItemImg: `https://picsum.photos//540/250`,
@@ -78,7 +99,7 @@ var recommendedObjects = [
   },
   {
     recommendedItemImg: `https://picsum.photos//541/250`,
-    recommendedItemHeading: `Happy New Year`,
+    recommendedItemHeading: `Congratulations`,
     recommendedItemInfo: `95k views  ·  4 months ago`,
     recommendedItemName: `Ozodbek Nazarbekov`,
     recommendedVideoDuration: `6:36`
@@ -93,26 +114,6 @@ var recommendedObjects = [
 ];
 
 
-var elChannelTemplate = $_(`.channel-template`).content;
-var elChannelTemplateFragment = document.createDocumentFragment();
-
-channelObjects.forEach (function(channelObject){
-  var elChannelItem = elChannelTemplate.cloneNode(true);
-
-  $_(`.channel__item-img`, elChannelItem).src = channelObject.channelItemImg;
-  $_(`.channel__item-heading`, elChannelItem).textContent = channelObject.channelItemHeading;
-  $_(`.channel__item-info`, elChannelItem).textContent = channelObject.channelItemInfo;
-  $_(`.channel__item-name`, elChannelItem).textContent = channelObject.channelItemName;
-  $_(`.video-duration`, elChannelItem).textContent = channelObject.recommendedVideoDuration;
-
-  elChannelTemplateFragment.appendChild(elChannelItem);
-
-});
-
-$_(`.channel__list`).appendChild(elChannelTemplateFragment);
-
-
-
 var elRecommendedTemplate = $_(`.recommended-template`).content;
 var elRecommendedTemplateFragment = document.createDocumentFragment();
 
@@ -123,7 +124,7 @@ recommendedObjects.forEach (function(recommendedObject){
   $_(`.recommended__item-heading`, elRecommendedItem).textContent = recommendedObject.recommendedItemHeading;
   $_(`.recommended__item-info`, elRecommendedItem).textContent = recommendedObject.recommendedItemInfo;
   $_(`.recommended__item-name`, elRecommendedItem).textContent = recommendedObject.recommendedItemName;
-  $_(`.recommended_video-duration`, elRecommendedItem).textContent = recommendedObject.recommendedVideoDuration;
+  $_(`.recommended__video-duration`, elRecommendedItem).textContent = recommendedObject.recommendedVideoDuration;
 
   elRecommendedTemplateFragment.appendChild(elRecommendedItem);
 
