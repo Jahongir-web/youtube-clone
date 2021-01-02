@@ -512,15 +512,15 @@ img {
 }
 
 .site-header__buttons-item:nth-child(2) .site-header__buttons {
-  background-image: url(../../img/grid.svg);
+  background-image: url(../img/grid.svg);
 }
 
 .site-header__buttons-item:nth-child(3) .site-header__buttons {
-  background-image: url(../../img/notifications.svg);
+  background-image: url(../img/notifications.svg);
 }
 
 .site-header__buttons-item:nth-child(4) .site-header__buttons {
-  background-image: url(../../img/user.svg);
+  background-image: url(../img/user.svg);
 }
 
 .site-header__buttons {
@@ -578,6 +578,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow-x: hidden;
+  margin-bottom: 50px;
 }
 
 .channel__item {
@@ -759,5 +760,107 @@ img {
 
 .d-none {
   display: none;
+}
+
+.recommendend__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.recommended__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+}
+
+.recommended__item {
+  margin-right: 40px;
+  max-width: 540px;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.recommended__item-link {
+  text-decoration: none;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.recommended__item-img {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  width: 540px;
+  height: 250px;
+}
+
+.recommended__item-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.recommended__item-infobox {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommended__item-info {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.recommended__item-name {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.recommended__video-duration {
+  display: block;
+  text-align: center;
+  width: 47px;
+  height: 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 5;
+  top: 215px;
+  left: 480px;
 }
 /*# sourceMappingURL=styles.css.map */

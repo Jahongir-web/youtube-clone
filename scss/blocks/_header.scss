@@ -79,13 +79,13 @@
 .site-header__buttons-item {
   margin-left: 50px;
   &:nth-child(2) .site-header__buttons {
-    background-image: url(../../img/grid.svg);
+    background-image: url(../img/grid.svg);
   }
   &:nth-child(3) .site-header__buttons {
-    background-image: url(../../img/notifications.svg);
+    background-image: url(../img/notifications.svg);
   }
   &:nth-child(4) .site-header__buttons {
-    background-image: url(../../img/user.svg);
+    background-image: url(../img/user.svg);
   }
 }
 
