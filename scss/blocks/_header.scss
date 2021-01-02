@@ -1,4 +1,8 @@
 .header-site {
+  max-width: 1920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   padding-left: 35px;
@@ -36,6 +40,7 @@
   display: flex;
   margin-right: auto;
   max-width: 480px;
+  min-width: 145px;
   width: 100%;
 }
 
@@ -92,4 +97,5 @@
   background-image: url(../img/camera.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
